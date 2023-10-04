@@ -1,0 +1,101 @@
+/* Keep all necessary css in styles.css file */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --lightmode: rgb(250, 250, 250);
+    --darkmode: rgb(30, 40, 50);
+    --content-color-light: antiquewhite;
+    --content-color-dark: black;
+    --header-light: wheat;
+    --header-red: darkred !important;
+
+}
+
+.light-ui-mode{
+    background-color: var(--lightmode);
+    color: var(--content-color-dark)
+}
+.dark-ui-mode{
+    background-color: var(--darkmode);
+    color: var(--content-color-light)
+}
+
+.header-toggle{
+    color: var(--header-red);
+    background-color: var(--header-red);
+    border-radius: 0.25rem;
+}
+
+body {
+    color: var(--content-color-light);
+    background-color: var(--darkmode);
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+.sample{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+}
+
+.container {
+    padding: 4rem;
+    height: 70vh;
+    overflow-y: auto;
+}
+
+.container h1 {
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: var(--header-light);
+}
+
+.container .tips {
+    width: fit-content;
+    margin: 2rem auto;
+}
+
+.container .tips ul {
+    padding: 1rem;
+}
+
+.hacktoberfest-end {
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: larger;
+}
+
+.hacktoberfest-end #time-to-end {
+    color: var(--header-red);
+    padding: 0.5rem;
+    background-color: var(--header-light);
+    border-radius: 1rem;
+    box-shadow: 0.25rem 0.25rem var(--header-red);
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.toggle{
+    display: flex;
+    justify-content: end;
+    padding-right: 2rem;
+    padding-top: 0.5rem;  
+}
+
+.toggle-btn {
+    border: none;
+    background: transparent;
+    font-size: larger;
+}
+
+

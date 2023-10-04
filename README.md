@@ -33,16 +33,19 @@ To contribute, you must register and make four valid pull requests (PRs) between
 
 -   Use JavaScript Language Only.
 -   You can add any JS game or valauable logic that seems intresting.
--   For Js game, create a simple HTML page and add scripts. Sample templates are given in Sample folder of the repository.
+-   For Js game, create a folder with code logic, with index.html, style.css(if needed) add scripts.js file name.   
+-   Sample templates are given in Sample folder of the repository. In include sample for both JS Games and Css Design.
 -   In the 'CSS TIME' folder, you can add styles for diffrent icons, for e.g. a calender, ghost, sekeleton, etc.
+
+-   Note that keep all Games in JavaScriptLogicGames folder, and keep all CSS deisgn code in CssTime Folder.
 
 ## Steps For Contribution
 
     1. Fork this repo
     2. Star this repo
-    3. Add a file(index.html with embedded scripts.js or style.css)/ folder(index.html with and style.css/scripts.js file)
+    3. Add a folder with 'GameName' as folder name, where GameName is name of game. e.g. SnakeGame (include all necessary files like index.html with embedded scripts.js or style.css inside).
     4. commit the code
-    5. Make pull request
+    5. Make pull request (Make sure your PR is well defined).
 ***
 <h2 align="center">
     <p>
