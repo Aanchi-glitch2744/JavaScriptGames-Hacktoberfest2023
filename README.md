@@ -32,12 +32,12 @@ To contribute, you must register and make four valid pull requests (PRs) between
 ## Rules To Contribute To This Repo
 
 -   Use JavaScript Language Only.
--   You can add any JS game or valauable logic that seems intresting.
+-   You can add any JS game or valuable logic that seems interesting.
 -   For Js game, create a folder with code logic, with index.html, style.css(if needed) add scripts.js file name.   
 -   Sample templates are given in Sample folder of the repository. In include sample for both JS Games and Css Design.
--   In the 'CSS TIME' folder, you can add styles for diffrent icons, for e.g. a calender, ghost, sekeleton, etc.
+-   In the 'CSS TIME' folder, you can add styles for different icons, for e.g. a calender, ghost, skeleton, etc.
 
--   Note that keep all Games in JavaScriptLogicGames folder, and keep all CSS deisgn code in CssTime Folder.
+-   Note that keep all Games in JavaScriptLogicGames folder, and keep all CSS design code in CssTime Folder.
 
 ## Steps For Contribution
 
