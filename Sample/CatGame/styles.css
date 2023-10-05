@@ -1,0 +1,19 @@
+#meme-container {
+    position: relative;
+    width: 400px;
+    height: 400px;
+    border: 2px solid black;
+    margin: 20px auto;
+}
+#meme-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 24px;
+    text-align: center;
+}
+#cat-image {
+    max-width: 100%;
+    max-height: 100%;
+}

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cat Meme Generator</title>
+    <link rel="stylsheet" href="styles.css">
+</head>
+<body>
+    <h1>Cat Meme Generator</h1>
+    <div>
+        <label for="cat-select">Choose a cat image:</label>
+        <select id="cat-select">
+            <option value="https://t4.ftcdn.net/jpg/00/97/58/97/360_F_97589769_t45CqXyzjz0KXwoBZT9PRaWGHRk5hQqQ.jpg">Cat 1</option>
+            <option value="https://t4.ftcdn.net/jpg/06/03/36/15/360_F_603361586_8mbaS7j0lNVOns7iKiqzFVXGafNpS5eA.jpg">Cat 2</option>
+            <!-- Add more cat options here -->
+        </select>
+    </div>
+    <div>
+        <label for="meme-text-input">Enter meme text:</label>
+        <input type="text" id="meme-text-input">
+    </div>
+    <button id="generate-button">Generate Meme</button>
+    <div id="meme-container">
+        <img src="" alt="Cat" id="cat-image">
+        <div id="meme-text"></div>
+    </div>
+    <script src="script.js"></script>
+    
+</body>
+</html>
