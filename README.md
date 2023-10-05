@@ -44,8 +44,9 @@ To contribute, you must register and make four valid pull requests (PRs) between
     1. Fork this repo
     2. Star this repo
     3. Add a folder with 'GameName' as folder name, where GameName is name of game. e.g. SnakeGame (include all necessary files like index.html with embedded scripts.js or style.css inside).
-    4. commit the code
-    5. Make pull request (Make sure your PR is well defined).
+    4. Place GameFolder into JavaScriptGameLogic Folder and Css Designs in CssTime Folder.
+    5. Commit the code
+    6. Make pull request (Make sure your PR is well defined).
 ***
 <h2 align="center">
     <p>
