@@ -1,0 +1,23 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+#game-container {
+    margin-top: 20px;
+}
+
+#sentence {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+#input-box {
+    font-size: 20px;
+    padding: 5px;
+}
+
+#result {
+    font-size: 24px;
+    margin-top: 20px;
+}
