@@ -1,0 +1,33 @@
+body {
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.vampire-sign {
+    font-family: 'Algerian', cursive;
+    font-size: 4rem;
+    color: #ff0000;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+}
+
+.blood-drip {
+    width: 10px;
+    height: 30px;
+    background-color: #ff0000;
+    position: absolute;
+    bottom: 0;
+    animation: blood-drip 1s infinite alternate;
+}
+
+@keyframes blood-drip {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(10px);
+    }
+}
