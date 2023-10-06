@@ -1,0 +1,88 @@
+/* Vampire head */
+.vampire {
+    width: 200px;
+    height: 300px;
+    background-color: #fa1706;
+    border-radius: 50%;
+    position: relative;
+    margin: 100px auto;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+/* Vampire eyes */
+.eye {
+    width: 50px;
+    height: 80px;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    top: 60px;
+}
+
+.left-eye {
+    left: 50px;
+}
+
+.right-eye {
+    right: 50px;
+}
+
+/* Vampire pupils */
+.pupil {
+    width: 20px;
+    height: 20px;
+    background-color: black;
+    border-radius: 50%;
+    position: absolute;
+    top: 30px;
+    left: 15px;
+}
+
+.right-pupil {
+    left: 15px;
+}
+
+.left-pupil {
+    right: 15px;
+}
+
+/* Vampire mouth */
+.mouth {
+    width: 100px;
+    height: 100px;
+    border: 2px solid black;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    position: absolute;
+    top: 140px;
+    left: 50px;
+}
+
+/* Vampire fangs */
+.fang {
+    width: 20px;
+    height: 40px;
+    background-color: white;
+    position: absolute;
+    top: 100px;
+    transform: rotate(-45deg);
+}
+
+.left-fang {
+    left: 70px;
+}
+
+.right-fang {
+    right: 70px;
+}
+
+/* Vampire collar */
+.collar {
+    width: 160px;
+    height: 20px;
+    background-color: black;
+    border-radius: 50%;
+    position: absolute;
+    top: 270px;
+    left: 20px;
+}
