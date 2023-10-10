@@ -90,22 +90,10 @@ function guessLetter() {
     let found = false;
     for (let i = 0; i < puzzle.word.length; i++) {
         if (puzzle.word[i] === letter) {
-            // Update the puzzle board to reveal the correct letter
-            const puzzleBoard = document.getElementById('puzzle-board');
-            const puzzleLetters = puzzleBoard.getElementsByClassName('letter');
-            puzzleLetters[i].textContent = letter;
-
-            // Set the result text to "Correct guess"
-            document.getElementById('result-text').textContent = 'Correct guess';
-            
             // Mark the letter as found
             found = true;
+            break;
         }
-    }
-
-    // If the letter was not found, set the result text to "Incorrect guess"
-    if (!found) {
-        document.getElementById('result-text').textContent = 'Incorrect guess';
     }
 
     // Update the player's score and display based on your game rules
@@ -114,17 +102,24 @@ function guessLetter() {
         const pointsPerLetter = 100; // Adjust this value as needed
         playerScore += pointsPerLetter;
         document.getElementById('score-display').textContent = playerScore;
+        
+        // Set the result text to "Correct guess" here, outside of the loop
+        document.getElementById('result-text').textContent = 'Correct guess';
     } else {
         // Implement your logic for incorrect guesses
         // For example, you can deduct points or take other actions
         const pointsDeducted = 50; // Adjust this value as needed
         playerScore -= pointsDeducted;
         document.getElementById('score-display').textContent = playerScore;
+
+        // Set the result text to "Incorrect guess" for incorrect guesses
+        document.getElementById('result-text').textContent = 'Incorrect guess';
     }
 
     // Clear the guess input field
     document.getElementById('guess-input').value = '';
 }
+
 
 
 

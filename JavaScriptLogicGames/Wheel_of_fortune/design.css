@@ -32,6 +32,7 @@ body, h1, p {
     border-radius: 50%;
     margin: 0 auto 20px;
     position: relative;
+    overflow: hidden;
 }
 
 /* Modify the animation duration to make it spin very fast for 3 seconds */
@@ -55,15 +56,16 @@ body, h1, p {
     height: 0;
     border-left: 100px solid transparent;
     border-right: 100px solid transparent;
-    border-bottom: 100px solid #ff9900;
+    border-top: 100px solid #ff9900;
     border-radius: 50%;
-    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
-    transform-origin: 50% 100%;
+    clip-path: polygon(50% 0%, 0% 0%, 100% 100%);
+    transform-origin: 50% 50%;
 }
 
 .segment:nth-child(odd) {
     background-color: #ffd700;
 }
+
 
 /* Style the game board */
 .game-board {
