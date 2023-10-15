@@ -1,4 +1,4 @@
-const duck = document.querySelector('.duck');
+const duck = document.querySelector('.box-duck');
 const scoreValue = document.getElementById('scoreValue');
 const score = document.getElementById('score');
 
