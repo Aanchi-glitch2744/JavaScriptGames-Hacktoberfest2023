@@ -1,0 +1,144 @@
+h1 {
+    font-family: "Clear Sans", "Helvetica Neue", Arial, sans-serif;
+    font-size: 26px;
+    color: white;
+    font-weight: 500;
+    letter-spacing: 2px;
+    word-spacing: 0px;
+    text-align: center;
+    padding-bottom: 3px;
+    border-bottom: 1px solid #3a3a3c;
+  }
+  body {
+    background-color: black;
+  }
+  .rules{
+    position:absolute;
+    max-width:320px;
+    left:50px;
+    top:40px;
+    padding:20px;
+    border-radius:16px;
+    background-color: white;
+    box-shadow:1px 1px 10px #CCC;
+    opacity: 0;
+    transition: opacity 1.2s ease-out;
+  }
+  .x{
+    font-family: "Clear Sans", "Helvetica Neue", Arial, sans-serif;
+    font-size: 18px;
+    position:absolute;
+    right:12px;
+    top:3px;
+    cursor:pointer;
+  }
+  .opacity{
+    opacity:0.8;
+    transition: all 1.2s ease-out;
+  }
+  li{
+   font-family: "Clear Sans", "Helvetica Neue", Arial, sans-serif;
+    font-size: 15px;
+    line-height:20px;
+  }
+  .wrapper {
+    max-width: 480px;
+    margin: auto;
+    position: relative;
+  }
+  .i{
+    position:absolute;
+    left:5px;
+      cursor:pointer;
+  }
+  .toast {
+    box-shadow:1px 1px 10px #CCC;
+    font-family: "Clear Sans", "Helvetica Neue", Arial, sans-serif;
+    font-size: 17px;
+    position: absolute;
+    top: 32%;
+    width: 230px;
+    background-color: white;
+    padding: 6px;
+    opacity: 0;
+    border-radius: 5px;
+    cursor:pointer;
+    transition: all 1.2s ease-out;
+  }
+  .box {
+    width: 20%;
+    height: 80%;
+    border: 2px solid #3a3a3c;
+    font-weight: 600;
+    margin: 5px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Clear Sans", "Helvetica Neue", Arial, sans-serif;
+    font-size: 20px;
+    background-color: "black"
+  }
+  .flex {
+    width: 250px;
+    height: 50px;
+    display: flex;
+    justify-content: items-center;
+    margin: auto;
+    text-align: center;
+  }
+  #keyboard {
+    margin: auto;
+    min-width: 465px;
+    margin-top: 20px;
+    text-align: center;
+  }
+  @media screen and (max-width: 450px) {
+    #keyboard {
+     width: 100%;
+      min-width:100%;
+    }
+    button{
+      font-size:14px !important;
+    height: 40px !important;
+    }
+    #enter {
+    width: 50px !important;
+  }
+  #back {
+    width: 30px !important;
+  }
+  }
+  button {
+    cursor:pointer;
+    width: 8%;
+    height: 50px;
+    margin: 3px;
+    text-align: center;
+    padding: 0;
+    border-radius: 7px;
+    text-transform: uppercase;
+    background-color: white;
+  }
+  #enter {
+    width: 60px;
+  }
+  #back {
+    width: 50px;
+  }
+  .gray{
+    background-color:#3a3a3c;
+    transition: all 1.2s ease-out;
+  }
+  .green{
+     background-color: #538d4e !important;
+    transition: all 1.2s ease-out;
+  }
+  .yellow{
+    background-color:#b59f3b;
+    transition: all 1.2s ease-out;
+  }
+  .svg{
+    margin-left:10px;
+    cursor:pointer;
+  }
