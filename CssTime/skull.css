@@ -1,0 +1,79 @@
+*{
+    position:relative;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #222;
+    display:flex;
+    justify-content: center;
+    left: 200px;
+    top: 35px;
+}
+#skull{
+    background-color: white;
+    width: 200px;
+    height: 200px;
+    border-radius: 50% 50% 25% 25%;
+    justify-content: center;
+    align-items: center;   
+
+}
+.eyes{
+    background-color: #222;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.left{
+    top:89px;
+    left: 25px;
+
+}
+.right{
+    top: 30px;
+    right: -110px;
+}
+#jaw{
+    width: 150px;
+    height: 50px;
+    background-color: white;
+    border-radius: 10% 10% 10% 10%;
+    top: 100px;
+    left: 28px;
+}
+.teeth{
+    height: 50px;
+    width: 25px;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+.first{
+    top: 15px;
+    left: 35px;
+}
+.second{
+    top: -35px;
+    left: 70px;
+}
+.third{
+    top: -85px;
+    left: 105px;
+}
+.fourth{
+    top: -135px;
+    left: 140px;
+}
+#nose{
+    height: 35px;
+    width: 35px;
+    background-color: black;
+    border-radius: 50%;
+    top:-215px;
+    left: 80px;
+}
