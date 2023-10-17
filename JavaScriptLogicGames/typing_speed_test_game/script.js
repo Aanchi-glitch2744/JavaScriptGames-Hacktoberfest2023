@@ -4,7 +4,10 @@ const quotes = [
     "Coding is fun and challenging at the same time.",
     "Practice makes perfect.",
     "Keep calm and code on.",
-    "JavaScript is a powerful programming language."
+    "JavaScript is a powerful programming language.",
+    "Programming is a way of thinking.",
+    "Learn to code and change the world.",
+    "Software development is an art and a science."
 ];
 
 let currentQuoteIndex = 0;
