@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<!-- Coding by CodingLab || www.codinglabweb.com -->
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wordle game</title>
+
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="rules" id="rules">
+            <div class="x" onclick="closeModal()">
+                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M12.1802 0.25L7 5.43025L1.81977 0.25L0.25 1.81978L5.43023 6.99999L0.25 12.1802L1.81977 13.75L7 8.56977L12.1802 13.75L13.75 12.1802L8.56977 6.99999L13.75 1.81978L12.1802 0.25Z"
+                        fill="black" />
+                </svg>
+            </div>
+            <li>Guess the WORDLE in 5 tries.</li>
+
+            <li>
+                Each guess must be a valid 5 letter word. Hit the enter button to submit.
+            </li>
+
+            <li>
+                After each guess, the color of the tiles will change to show how close
+                your guess was to the word.
+            </li>
+            <li>
+                If the tile turns green, the letter exists in the word and is in the right
+                position.
+            </li>
+            <li>
+                If the tile turns yellow, the letter exists in the word but in a wrong
+                position.
+            </li>
+            <li>If the tile turns gray, the letter doesn't exist in the word.</li>
+        </div>
+        <h1>
+            <svg width="26" height="26" class="i" onclick="openModal()" viewBox="0 0 16 16" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M7.99997 1.33333C4.31996 1.33333 1.3333 4.32 1.3333 8C1.3333 11.68 4.31996 14.6667 7.99997 14.6667C11.68 14.6667 14.6666 11.68 14.6666 8C14.6666 4.32 11.68 1.33333 7.99997 1.33333ZM8.66663 11.3333H7.3333V7.33333H8.66663V11.3333ZM8.66663 6H7.3333V4.66667H8.66663V6Z"
+                    fill="white" />
+            </svg>
+            WORDLE
+            <!--     <svg width="20" height="20" fill="white" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" class="svg" onclick="reload()">
+          <path d="M4.386 11.82a4.967 4.967 0 005.938 3.386c.147-.037.3.044.344.189l.39 1.284.083.274a.225.225 0 01-.153.281 7.108 7.108 0 01-8.64-4.795 7.108 7.108 0 014.73-8.861 7.108 7.108 0 018.86 4.732l.02.064 1.653.045a.365.365 0 01.364.195v.002a.342.342 0 01.024.056.366.366 0 01-.125.404l-2.842 2.91a.364.364 0 01-.53-.009l-2.735-2.98a.365.365 0 01-.101-.432.365.365 0 01.395-.213l1.651.052c-.974-2.318-3.548-3.536-6.014-2.787a4.967 4.967 0 00-3.312 6.203z"></path>
+        </svg> -->
+        </h1>
+        <div class="flex">
+            <div class="box" id="00"></div>
+            <div class="box" id="01"></div>
+            <div class="box" id="02"></div>
+            <div class="box" id="03"></div>
+            <div class="box" id="04"></div>
+        </div>
+        <div class="flex">
+            <div class="box" id="10"></div>
+            <div class="box" id="11"></div>
+            <div class="box" id="12"></div>
+            <div class="box" id="13"></div>
+            <div class="box" id="14"></div>
+        </div>
+        <div class="flex">
+            <div class="box" id="20"></div>
+            <div class="box" id="21"></div>
+            <div class="box" id="22"></div>
+            <div class="box" id="23"></div>
+            <div class="box" id="24"></div>
+        </div>
+        <div class="flex">
+            <div class="toast" id="toast"></div>
+            <div class="box" id="30"></div>
+            <div class="box" id="31"></div>
+            <div class="box" id="32"></div>
+            <div class="box" id="33"></div>
+            <div class="box" id="34"></div>
+        </div>
+        <div class="flex">
+            <div class="box" id="40"></div>
+            <div class="box" id="41"></div>
+            <div class="box" id="42"></div>
+            <div class="box" id="43"></div>
+            <div class="box" id="44"></div>
+        </div>
+        <div id="keyboard">
+            <div class="row">
+                <button id="Q">Q</button><button id="W">W</button><button id="E">E</button><button
+                    id="R">R</button><button id="T">T</button><button id="Y">Y</button><button id="U">U</button><button
+                    id="I">I</button><button id="O">O</button><button id="P">P</button>
+            </div>
+            <div class="row">
+                <div class="spacer half"></div>
+                <button id="A">A</button><button id="S">S</button><button id="D">D</button><button
+                    id="F">F</button><button id="G">G</button><button id="H">H</button><button id="J">J</button><button
+                    id="K">K</button><button id="L">L</button>
+                <div class="spacer half"></div>
+            </div>
+            <div class="row">
+                <button id="enter" class="one-and-a-half">enter</button><button id="Z">Z</button><button
+                    id="X">X</button><button id="C">C</button><button id="V">V</button><button id="B">B</button><button
+                    id="N">N</button><button id="M">M</button><button id="back" class="one-and-a-half">←</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
