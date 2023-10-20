@@ -1,0 +1,34 @@
+*{
+    background-color: #33343D;
+    font-family: 'Satisfy', cursive;
+}
+.p1img , .p2img{
+    height: 200px;
+    width : 200px;
+    margin-top: 0px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+p{
+    margin-left: 90px;
+}
+.header{
+    margin: auto;
+    text-align: center;
+    color: aqua;
+    font-size :50px;
+}
+.main{
+    display: flex;
+    justify-content: center;
+    color : aqua;
+    font-size: xx-large;
+}
+.footer{
+    color : white;
+    text-align: center;
+    margin: 50px;
+    font-family: 'Josefin Sans', sans-serif;
+    /* font-family: 'Roboto Condensed', sans-serif; */
+}
+

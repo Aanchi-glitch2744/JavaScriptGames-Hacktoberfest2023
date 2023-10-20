@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roll the dice!</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js"></script>
+
+</head>
+<body>
+    <div class="header">
+        <h1 class="result" id="res">Refresh to roll the dice</h1>
+    </div>
+
+    <div class="main">
+        <div class="player1">
+            <p>Player 1</p>
+            <img src="imagepack/dice2.png" alt="2" class="p1img" id="p1die">
+            
+        </div>
+        
+        <div class="player2">
+            <p>Player 2</p>
+            <img src="imagepack/dice1.png" alt="1" class="p2img" id="p2die">
+        </div>
+    </div>
+    <div class="footer">
+        To roll the dice , refresh the page . The player with higher number on dice wins.
+    </div>
+    <!-- Javascript -->
+    <script>
+        var diceNum1 = Math.floor(Math.random()*6 + 1);
+        var diceNum2 = Math.floor(Math.random()*6 + 1);
+        console.log("Player 1 : " + diceNum1);
+        console.log("Player 2 : " + diceNum2);
+        if(diceNum1>diceNum2){
+            document.getElementById("res").innerHTML = "Player 1 wins";
+        }
+        else if(diceNum1===diceNum2){
+            document.getElementById("res").innerHTML = "Tie";
+        }
+        else{
+            document.getElementById("res").innerHTML = "Player 2 wins";
+        }
+        if(diceNum1===1){
+            var image = document.getElementById('p1die');
+            image.src = "imagepack/dice1.png";
+            image.alt = '1';
+        }
+        else if(diceNum1===2){
+            var image = document.getElementById('p1die');
+            image.src = "imagepack/dice2.png";
+            image.alt = '2';
+        }
+        else if(diceNum1===3){
+            var image = document.getElementById('p1die');
+            image.src = "imagepack/dice3.png";
+            image.alt = '3';
+        }
+        else if(diceNum1===4){
+            var image = document.getElementById('p1die');
+            image.src = "imagepack/dice4.png";
+            image.alt = '4';
+        }
+        else if(diceNum1===5){
+            var image = document.getElementById('p1die');
+            image.src = "imagepack/dice5.png";
+            image.alt = '5';
+        }
+        else if(diceNum1===6){
+            var image = document.getElementById('p1die');
+            image.src = "imagepack/dice6.png";
+            image.alt = '6';
+        }
+
+        if(diceNum2===1){
+            var image = document.getElementById('p2die');
+            image.src = "imagepack/dice1.png";
+            image.alt = '1';
+        }
+        else if(diceNum2===2){
+            var image = document.getElementById('p2die');
+            image.src = "imagepack/dice2.png";
+            image.alt = '2';
+        }
+        else if(diceNum2===3){
+            var image = document.getElementById('p2die');
+            image.src = "imagepack/dice3.png";
+            image.alt = '3';
+        }
+        else if(diceNum2===4){
+            var image = document.getElementById('p2die');
+            image.src = "imagepack/dice4.png";
+            image.alt = '4';
+        }
+        else if(diceNum2===5){
+            var image = document.getElementById('p2die');
+            image.src = "imagepack/dice5.png";
+            image.alt = '5';
+        }
+        else if(diceNum2===6){
+            var image = document.getElementById('p2die');
+            image.src = "imagepack/dice6.png";
+            image.alt = '6';
+        }
+    </script>
+</body>
+
+
+</html>
