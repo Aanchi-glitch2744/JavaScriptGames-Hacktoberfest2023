@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Minesweeper Puzzle</title>
+        <link rel="stylesheet" type="text/css" href="./styles.css" />
+    </head>
+    <body>
+        <h1>Minesweeper Puzzle</h1>
+        <div class="start-screen">
+            <p>
+                Click on a cell to uncover it. Avoid mines! <br />Let's See if
+                you can win this!
+            </p>
+            <button class="play-button" onclick="startGame()">Play</button>
+        </div>
+
+        <div class="board" id="board" style="display: none"></div>
+        <p class="game-over" id="game-over-message" style="display: none"></p>
+        <script src="./scripts.js"></script>
+    </body>
+</html>
