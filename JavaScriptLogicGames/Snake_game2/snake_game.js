@@ -1,5 +1,5 @@
 const canvas = document.getElementById("canvas");
- 
+const ctx = canvas.getContext("2d");
 const width = canvas.width,
   height = canvas.height;
 let fps = 1000 / 12;
@@ -41,7 +41,7 @@ function drawBoard() {
   ctx.fillRect(0, 0, width, height);
 }
 
-// Draw square 
+// Draw square
 function drawSquare(x, y, color) {
   ctx.fillStyle = color;
   ctx.fillRect(x * squareSize, y * squareSize, squareSize, squareSize);
@@ -79,7 +79,7 @@ function moveSnake() {
   // (head)
 
   // consume the directions
-  if (directionsQueue. ength) {
+  if (directionsQueue.length) {
     currentDirection = directionsQueue.shift();
   }
 
